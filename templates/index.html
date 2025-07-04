@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Approval Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Loan Approval Predictor</h2>
+    <form action="/predict" method="post">
+        Gender:
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select><br>
+
+        Married:
+        <select name="married">
+            <option>Yes</option>
+            <option>No</option>
+        </select><br>
+
+        Education:
+        <select name="education">
+            <option>Graduate</option>
+            <option>Not Graduate</option>
+        </select><br>
+
+        Applicant Income:
+        <input type="number" name="income"><br>
+
+        Loan Amount:
+        <input type="number" name="loan"><br>
+
+        Credit History (1/0):
+        <input type="number" name="credit"><br>
+
+        <input type="submit" value="Check Approval">
+    </form>
+</body>
+</html>

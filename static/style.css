@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+    background: #e0f7fa;
+    text-align: center;
+    margin-top: 50px;
+}
+form {
+    background: #ffffff;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 8px;
+}
+input, select {
+    margin: 5px;
+    padding: 8px;
+}
